@@ -1,6 +1,6 @@
 [gd_scene load_steps=35 format=2]
 
-[ext_resource path="res://player.gd" type="Script" id=1]
+[ext_resource path="res://scenes/player.gd" type="Script" id=1]
 [ext_resource path="res://sprites/ninja/Idle__000.png" type="Texture" id=2]
 [ext_resource path="res://sprites/ninja/Idle__001.png" type="Texture" id=3]
 [ext_resource path="res://sprites/ninja/Idle__002.png" type="Texture" id=4]
@@ -17,21 +17,23 @@
 [ext_resource path="res://sprites/ninja/Jump__003.png" type="Texture" id=15]
 [ext_resource path="res://sprites/ninja/Jump__004.png" type="Texture" id=16]
 [ext_resource path="res://sprites/ninja/Jump__005.png" type="Texture" id=17]
-[ext_resource path="res://sprites/ninja/Run__000.png" type="Texture" id=18]
-[ext_resource path="res://sprites/ninja/Run__001.png" type="Texture" id=19]
-[ext_resource path="res://sprites/ninja/Run__002.png" type="Texture" id=20]
-[ext_resource path="res://sprites/ninja/Run__003.png" type="Texture" id=21]
-[ext_resource path="res://sprites/ninja/Run__004.png" type="Texture" id=22]
-[ext_resource path="res://sprites/ninja/Run__005.png" type="Texture" id=23]
-[ext_resource path="res://sprites/ninja/Run__006.png" type="Texture" id=24]
-[ext_resource path="res://sprites/ninja/Run__007.png" type="Texture" id=25]
-[ext_resource path="res://sprites/ninja/Run__008.png" type="Texture" id=26]
-[ext_resource path="res://sprites/ninja/Run__009.png" type="Texture" id=27]
-[ext_resource path="res://sprites/ninja/Jump__006.png" type="Texture" id=28]
-[ext_resource path="res://sprites/ninja/Jump__007.png" type="Texture" id=29]
-[ext_resource path="res://sprites/ninja/Jump__008.png" type="Texture" id=30]
-[ext_resource path="res://sprites/ninja/Jump__009.png" type="Texture" id=31]
-[ext_resource path="res://tiles.tres" type="TileSet" id=32]
+[ext_resource path="res://sprites/ninja/Jump__006.png" type="Texture" id=18]
+[ext_resource path="res://sprites/ninja/Jump__007.png" type="Texture" id=19]
+[ext_resource path="res://sprites/ninja/Jump__008.png" type="Texture" id=20]
+[ext_resource path="res://sprites/ninja/Jump__009.png" type="Texture" id=21]
+[ext_resource path="res://sprites/ninja/Run__000.png" type="Texture" id=22]
+[ext_resource path="res://sprites/ninja/Run__001.png" type="Texture" id=23]
+[ext_resource path="res://sprites/ninja/Run__002.png" type="Texture" id=24]
+[ext_resource path="res://sprites/ninja/Run__003.png" type="Texture" id=25]
+[ext_resource path="res://sprites/ninja/Run__004.png" type="Texture" id=26]
+[ext_resource path="res://sprites/ninja/Run__005.png" type="Texture" id=27]
+[ext_resource path="res://sprites/ninja/Run__006.png" type="Texture" id=28]
+[ext_resource path="res://sprites/ninja/Run__007.png" type="Texture" id=29]
+[ext_resource path="res://sprites/ninja/Run__008.png" type="Texture" id=30]
+[ext_resource path="res://sprites/ninja/Run__009.png" type="Texture" id=31]
+[ext_resource path="res://tilesets/tiles.tres" type="TileSet" id=32]
+
+
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -46,14 +48,14 @@ animations = [ {
 "name": "jump-up",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ) ],
-"loop": true,
-"name": "run",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ) ],
 "loop": false,
 "name": "jump-down",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "run",
 "speed": 10.0
 } ]
 
@@ -84,7 +86,7 @@ position = Vector2( -0.934677, -0.105911 )
 scale = Vector2( 0.28769, 0.144893 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 7
+frame = 3
 playing = true
 _sections_unfolded = [ "Transform" ]
 
