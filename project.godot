@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="Ninja vs Zombies"
-run/main_scene="res://scenes/platform.tscn"
+run/main_scene="res://scenes/screens/level_1.tscn"
 config/icon="res://icon.png"
 
 [display]
